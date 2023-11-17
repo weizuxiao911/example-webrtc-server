@@ -1,0 +1,4 @@
+@ContentTpe = application/json
+
+###
+POST http://127.0.0.1:5001/kube/k8s%2Fdeploy.yaml

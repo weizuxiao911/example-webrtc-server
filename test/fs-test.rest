@@ -1,0 +1,24 @@
+@ContentType = application/json
+
+### 创建目录
+POST http://127.0.0.1:5001/fs/test1%2F2
+
+### 创建文件
+POST http://127.0.0.1:5001/fs/test1%2F1.txt?createAsFile=tue
+
+### 写入文件
+PUT http://127.0.0.1:5001/fs/test1%2F1.txt
+Content-Type: {{ContentType}}
+
+{
+    "content": "dGVzdA=="
+}
+
+### 删除目录或文件
+DELETE http://127.0.0.1:5001/fs/test1%2F2
+
+### 获取目录结构
+GET http://127.0.0.1:5001/fs/test1%2F?recursive=true
+
+### 获取文件内容
+GET http://127.0.0.1:5001/fs/test1%2F1.txt

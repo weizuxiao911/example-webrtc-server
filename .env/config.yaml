@@ -1,0 +1,12 @@
+server: 
+  port: 5001
+
+mysql: 
+  type: mysql
+  host: localhost
+  port: 3306
+  username: root
+  password: P@ssw0rd
+  database: test
+  synchronize: false
+  poolSize: 100
